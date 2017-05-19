@@ -11,6 +11,8 @@
 \usepackage{supertabular} 				%for Grades
 \usepackage{titlesec}					%custom \section
 \usepackage{longtable}
+\usepackage[showframe]{geometry}
+\usepackage{textpos}
 
 %Setup hyperref package, and colours for links
 \usepackage{hyperref}
@@ -39,16 +41,12 @@ ItalicFont = Fontin-Italic.otf
 %Italian hyphenation for the word: ''corporations''
 \hyphenation{im-pre-se}
 
-%-------------WATERMARK TEST [**not part of a CV**]---------------
-\usepackage[absolute]{textpos}
-
-\setlength{\TPHorizModule}{30mm}
-\setlength{\TPVertModule}{\TPHorizModule}
-\textblockorigin{2mm}{0.65\paperheight}
-\setlength{\parindent}{0pt}
-
 %--------------------BEGIN DOCUMENT----------------------
 \begin{document}
+
+\begin{textblock*}{100mm}(.85\textwidth,-2cm)
+{\color{gray!60} Last updated: \today}
+\end{textblock*}
 
 %WATERMARK TEST [**not part of a CV**]---------------
 %\font\wm=''Baskerville:color=787878'' at 8pt
